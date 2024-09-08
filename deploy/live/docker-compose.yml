@@ -5,8 +5,8 @@ services:
     container_name: portfolio.osb.im
     image: portfolio.osb.im:1.${BUILD_NUMBER}
     restart: always
-    ports:
-      - 9020:80
+    expose:
+      - 80
     networks:
       - npm
 
